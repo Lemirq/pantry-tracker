@@ -1,8 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inventy: An AI Pantry Tracker
+This is the project I made for my 2nd week at Headstarter AI.
 
+![Screenshot](https://github.com/Lemirq/pantry-tracker/blob/master/image.png?raw=true)
+
+---
 ## Getting Started
 
 First, run the development server:
+
 
 ```bash
 npm run dev
