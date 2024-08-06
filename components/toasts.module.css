@@ -1,0 +1,63 @@
+ol[dir='ltr'] .headlessClose {
+	--headless-close-start: unset;
+	--headless-close-end: 6px;
+}
+
+ol[dir='rtl'] .headlessClose {
+	--headless-close-start: 6px;
+	--headless-close-end: unset;
+}
+
+.headless {
+	padding: 16px;
+	width: 356px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	background: var(--gray1);
+	border: 1px solid var(--gray4);
+	position: relative;
+	background-size: cover;
+	background-image: radial-gradient(18% 28% at 24% 50%, #cefaffff 7%, #073aff00 100%),
+		radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%), radial-gradient(70% 53% at 36% 76%, #73f2ffff 0%, #073aff00 100%),
+		radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%), radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
+		radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%), radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+		radial-gradient(21% 37% at 72% 23%, #d3ff6d9c 24%, #073aff00 100%), radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+		radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%), linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+}
+
+.headless .headlessDescription {
+	margin: 0;
+	color: var(--gray10);
+	font-size: 14px;
+	line-height: 1;
+}
+
+.headless .headlessTitle {
+	font-size: 14px;
+	margin: 0 0 8px;
+	color: var(--gray12);
+	font-weight: 500;
+	line-height: 1;
+}
+
+.headlessClose {
+	position: absolute;
+	cursor: pointer;
+	top: 6px;
+	height: 24px;
+	width: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: var(--headless-close-start);
+	right: var(--headless-close-end);
+	color: var(--gray10);
+	padding: 0;
+	background: transparent;
+	border: none;
+	transition: color 200ms;
+}
+
+.headlessClose:hover {
+	color: var(--gray12);
+}
